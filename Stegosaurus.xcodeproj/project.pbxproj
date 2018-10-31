@@ -7,21 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74973D1917DD0A8C2AE57974 /* Pods_Stegosaurus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A68B9DCF4035092DB33BE9 /* Pods_Stegosaurus.framework */; };
+		B61A1BA62184B50900EA5BB8 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61A1BA52184B50900EA5BB8 /* Config.swift */; };
+		B61A1BA92184BAED00EA5BB8 /* ImageDecryptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61A1BA82184BAED00EA5BB8 /* ImageDecryptionViewController.swift */; };
+		B61A1BAB2184BB0400EA5BB8 /* UrlDecryptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61A1BAA2184BB0400EA5BB8 /* UrlDecryptionViewController.swift */; };
+		B61A1BAD2184BBD600EA5BB8 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61A1BAC2184BBD600EA5BB8 /* Api.swift */; };
+		B61A1BAF2184C17400EA5BB8 /* DecryptionResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61A1BAE2184C17400EA5BB8 /* DecryptionResultViewController.swift */; };
+		B62A2A33217A5D770024086A /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62A2A32217A5D770024086A /* AboutUsViewController.swift */; };
+		B6750FB4217511330095060B /* MessageAndKeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6750FB3217511330095060B /* MessageAndKeyViewController.swift */; };
 		B67F4BFB2174CF7D0069ADDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67F4BFA2174CF7D0069ADDD /* AppDelegate.swift */; };
-		B67F4BFD2174CF7D0069ADDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67F4BFC2174CF7D0069ADDD /* ViewController.swift */; };
 		B67F4C002174CF7D0069ADDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B67F4BFE2174CF7D0069ADDD /* Main.storyboard */; };
 		B67F4C022174CF7F0069ADDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B67F4C012174CF7F0069ADDD /* Assets.xcassets */; };
 		B67F4C052174CF7F0069ADDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B67F4C032174CF7F0069ADDD /* LaunchScreen.storyboard */; };
+		B67F4C0D2174D5030069ADDD /* FrontPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67F4C0C2174D5030069ADDD /* FrontPageViewController.swift */; };
+		B67F4C0F2174D5290069ADDD /* EncryptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67F4C0E2174D5290069ADDD /* EncryptionViewController.swift */; };
+		B67F4C112174D54E0069ADDD /* DecryptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67F4C102174D54E0069ADDD /* DecryptionViewController.swift */; };
+		B67F4C132174DA860069ADDD /* DefaultImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67F4C122174DA860069ADDD /* DefaultImageCollectionViewCell.swift */; };
+		B67F4C152174DC900069ADDD /* DefaultImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67F4C142174DC900069ADDD /* DefaultImage.swift */; };
+		B6B34C2D218520C600732880 /* FileAndKeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B34C2C218520C600732880 /* FileAndKeyViewController.swift */; };
+		B6B34C2F2185265000732880 /* EncryptionResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B34C2E2185265000732880 /* EncryptionResultViewController.swift */; };
+		B6B34C322185564A00732880 /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B34C312185564A00732880 /* UIAlertController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50A68B9DCF4035092DB33BE9 /* Pods_Stegosaurus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stegosaurus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B36E32AC39BB936E11C8993B /* Pods-Stegosaurus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stegosaurus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stegosaurus/Pods-Stegosaurus.debug.xcconfig"; sourceTree = "<group>"; };
+		B61A1BA52184B50900EA5BB8 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		B61A1BA82184BAED00EA5BB8 /* ImageDecryptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDecryptionViewController.swift; sourceTree = "<group>"; };
+		B61A1BAA2184BB0400EA5BB8 /* UrlDecryptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlDecryptionViewController.swift; sourceTree = "<group>"; };
+		B61A1BAC2184BBD600EA5BB8 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		B61A1BAE2184C17400EA5BB8 /* DecryptionResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecryptionResultViewController.swift; sourceTree = "<group>"; };
+		B62A2A32217A5D770024086A /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		B6750FB3217511330095060B /* MessageAndKeyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageAndKeyViewController.swift; sourceTree = "<group>"; };
 		B67F4BF72174CF7D0069ADDD /* Stegosaurus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stegosaurus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B67F4BFA2174CF7D0069ADDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B67F4BFC2174CF7D0069ADDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B67F4BFF2174CF7D0069ADDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B67F4C012174CF7F0069ADDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B67F4C042174CF7F0069ADDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B67F4C062174CF7F0069ADDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B67F4C0C2174D5030069ADDD /* FrontPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontPageViewController.swift; sourceTree = "<group>"; };
+		B67F4C0E2174D5290069ADDD /* EncryptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionViewController.swift; sourceTree = "<group>"; };
+		B67F4C102174D54E0069ADDD /* DecryptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecryptionViewController.swift; sourceTree = "<group>"; };
+		B67F4C122174DA860069ADDD /* DefaultImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		B67F4C142174DC900069ADDD /* DefaultImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultImage.swift; sourceTree = "<group>"; };
+		B6B34C2C218520C600732880 /* FileAndKeyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileAndKeyViewController.swift; sourceTree = "<group>"; };
+		B6B34C2E2185265000732880 /* EncryptionResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionResultViewController.swift; sourceTree = "<group>"; };
+		B6B34C312185564A00732880 /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
+		D9D3A91282F5D1D053B1387E /* Pods-Stegosaurus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stegosaurus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stegosaurus/Pods-Stegosaurus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +61,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74973D1917DD0A8C2AE57974 /* Pods_Stegosaurus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B61A1BA72184BAD500EA5BB8 /* Decryption */ = {
+			isa = PBXGroup;
+			children = (
+				B67F4C102174D54E0069ADDD /* DecryptionViewController.swift */,
+				B61A1BA82184BAED00EA5BB8 /* ImageDecryptionViewController.swift */,
+				B61A1BAA2184BB0400EA5BB8 /* UrlDecryptionViewController.swift */,
+				B61A1BAE2184C17400EA5BB8 /* DecryptionResultViewController.swift */,
+			);
+			path = Decryption;
+			sourceTree = "<group>";
+		};
 		B67F4BEE2174CF7D0069ADDD = {
 			isa = PBXGroup;
 			children = (
 				B67F4BF92174CF7D0069ADDD /* Stegosaurus */,
 				B67F4BF82174CF7D0069ADDD /* Products */,
+				C5D132F94C4AEDCDBC22BCA9 /* Pods */,
+				E360AD26122B2064520D78AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +101,65 @@
 			isa = PBXGroup;
 			children = (
 				B67F4BFA2174CF7D0069ADDD /* AppDelegate.swift */,
-				B67F4BFC2174CF7D0069ADDD /* ViewController.swift */,
 				B67F4BFE2174CF7D0069ADDD /* Main.storyboard */,
+				B61A1BA72184BAD500EA5BB8 /* Decryption */,
+				B6B34C2A218519DA00732880 /* Encryption */,
+				B6B34C2B218519FD00732880 /* DefaultImage */,
+				B6B34C302185562E00732880 /* Extensions */,
 				B67F4C012174CF7F0069ADDD /* Assets.xcassets */,
 				B67F4C032174CF7F0069ADDD /* LaunchScreen.storyboard */,
 				B67F4C062174CF7F0069ADDD /* Info.plist */,
+				B67F4C0C2174D5030069ADDD /* FrontPageViewController.swift */,
+				B62A2A32217A5D770024086A /* AboutUsViewController.swift */,
+				B61A1BA52184B50900EA5BB8 /* Config.swift */,
+				B61A1BAC2184BBD600EA5BB8 /* Api.swift */,
 			);
 			path = Stegosaurus;
+			sourceTree = "<group>";
+		};
+		B6B34C2A218519DA00732880 /* Encryption */ = {
+			isa = PBXGroup;
+			children = (
+				B67F4C0E2174D5290069ADDD /* EncryptionViewController.swift */,
+				B6750FB3217511330095060B /* MessageAndKeyViewController.swift */,
+				B6B34C2C218520C600732880 /* FileAndKeyViewController.swift */,
+				B6B34C2E2185265000732880 /* EncryptionResultViewController.swift */,
+			);
+			path = Encryption;
+			sourceTree = "<group>";
+		};
+		B6B34C2B218519FD00732880 /* DefaultImage */ = {
+			isa = PBXGroup;
+			children = (
+				B67F4C122174DA860069ADDD /* DefaultImageCollectionViewCell.swift */,
+				B67F4C142174DC900069ADDD /* DefaultImage.swift */,
+			);
+			path = DefaultImage;
+			sourceTree = "<group>";
+		};
+		B6B34C302185562E00732880 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B6B34C312185564A00732880 /* UIAlertController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C5D132F94C4AEDCDBC22BCA9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B36E32AC39BB936E11C8993B /* Pods-Stegosaurus.debug.xcconfig */,
+				D9D3A91282F5D1D053B1387E /* Pods-Stegosaurus.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E360AD26122B2064520D78AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50A68B9DCF4035092DB33BE9 /* Pods_Stegosaurus.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B67F4C092174CF7F0069ADDD /* Build configuration list for PBXNativeTarget "Stegosaurus" */;
 			buildPhases = (
+				CE6555E5EB333A5A8704A92B /* [CP] Check Pods Manifest.lock */,
 				B67F4BF32174CF7D0069ADDD /* Sources */,
 				B67F4BF42174CF7D0069ADDD /* Frameworks */,
 				B67F4BF52174CF7D0069ADDD /* Resources */,
+				9DD94674535E69A4E3F8F18B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +230,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9DD94674535E69A4E3F8F18B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Stegosaurus/Pods-Stegosaurus-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stegosaurus/Pods-Stegosaurus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE6555E5EB333A5A8704A92B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stegosaurus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B67F4BF32174CF7D0069ADDD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B67F4BFD2174CF7D0069ADDD /* ViewController.swift in Sources */,
+				B6B34C2D218520C600732880 /* FileAndKeyViewController.swift in Sources */,
+				B62A2A33217A5D770024086A /* AboutUsViewController.swift in Sources */,
+				B6B34C2F2185265000732880 /* EncryptionResultViewController.swift in Sources */,
+				B67F4C132174DA860069ADDD /* DefaultImageCollectionViewCell.swift in Sources */,
+				B61A1BA62184B50900EA5BB8 /* Config.swift in Sources */,
 				B67F4BFB2174CF7D0069ADDD /* AppDelegate.swift in Sources */,
+				B67F4C112174D54E0069ADDD /* DecryptionViewController.swift in Sources */,
+				B6750FB4217511330095060B /* MessageAndKeyViewController.swift in Sources */,
+				B61A1BAD2184BBD600EA5BB8 /* Api.swift in Sources */,
+				B67F4C0F2174D5290069ADDD /* EncryptionViewController.swift in Sources */,
+				B6B34C322185564A00732880 /* UIAlertController+Extensions.swift in Sources */,
+				B61A1BAB2184BB0400EA5BB8 /* UrlDecryptionViewController.swift in Sources */,
+				B61A1BA92184BAED00EA5BB8 /* ImageDecryptionViewController.swift in Sources */,
+				B67F4C0D2174D5030069ADDD /* FrontPageViewController.swift in Sources */,
+				B61A1BAF2184C17400EA5BB8 /* DecryptionResultViewController.swift in Sources */,
+				B67F4C152174DC900069ADDD /* DefaultImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +439,7 @@
 		};
 		B67F4C0A2174CF7F0069ADDD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B36E32AC39BB936E11C8993B /* Pods-Stegosaurus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +458,7 @@
 		};
 		B67F4C0B2174CF7F0069ADDD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9D3A91282F5D1D053B1387E /* Pods-Stegosaurus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
