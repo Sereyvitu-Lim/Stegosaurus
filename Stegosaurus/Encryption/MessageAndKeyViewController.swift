@@ -34,6 +34,7 @@ class MessageAndKeyViewController: UIViewController {
         let url = Config.baseUrl + "/insert"
         let params = ["key": keyTextField.text!]
         let textData = hiddenMessageTextView.text.data(using: String.Encoding.utf8)
+        
         Api.encryptionRequest(url: url, coverImageData: selectedImage.pngData()!, hiddenImageData: textData, parameters: params, onCompletion: { (link) -> (Void) in
             ProgressHUD.dismiss()
             self.insertedImageLink = link

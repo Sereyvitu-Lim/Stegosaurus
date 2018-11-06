@@ -27,6 +27,7 @@
 		B6B34C2D218520C600732880 /* FileAndKeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B34C2C218520C600732880 /* FileAndKeyViewController.swift */; };
 		B6B34C2F2185265000732880 /* EncryptionResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B34C2E2185265000732880 /* EncryptionResultViewController.swift */; };
 		B6B34C322185564A00732880 /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B34C312185564A00732880 /* UIAlertController+Extensions.swift */; };
+		B6C7FC2F218A1F0A0087035D /* ClientSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C7FC2E218A1F0A0087035D /* ClientSide.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		B6B34C2C218520C600732880 /* FileAndKeyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileAndKeyViewController.swift; sourceTree = "<group>"; };
 		B6B34C2E2185265000732880 /* EncryptionResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionResultViewController.swift; sourceTree = "<group>"; };
 		B6B34C312185564A00732880 /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
+		B6C7FC2E218A1F0A0087035D /* ClientSide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSide.swift; sourceTree = "<group>"; };
 		D9D3A91282F5D1D053B1387E /* Pods-Stegosaurus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stegosaurus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stegosaurus/Pods-Stegosaurus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +115,7 @@
 				B62A2A32217A5D770024086A /* AboutUsViewController.swift */,
 				B61A1BA52184B50900EA5BB8 /* Config.swift */,
 				B61A1BAC2184BBD600EA5BB8 /* Api.swift */,
+				B6C7FC2E218A1F0A0087035D /* ClientSide.swift */,
 			);
 			path = Stegosaurus;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Stegosaurus/Pods-Stegosaurus-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
@@ -246,6 +250,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
@@ -294,6 +299,7 @@
 				B61A1BAB2184BB0400EA5BB8 /* UrlDecryptionViewController.swift in Sources */,
 				B61A1BA92184BAED00EA5BB8 /* ImageDecryptionViewController.swift in Sources */,
 				B67F4C0D2174D5030069ADDD /* FrontPageViewController.swift in Sources */,
+				B6C7FC2F218A1F0A0087035D /* ClientSide.swift in Sources */,
 				B61A1BAF2184C17400EA5BB8 /* DecryptionResultViewController.swift in Sources */,
 				B67F4C152174DC900069ADDD /* DefaultImage.swift in Sources */,
 			);
