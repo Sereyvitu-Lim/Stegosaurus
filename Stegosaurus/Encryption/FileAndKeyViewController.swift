@@ -36,11 +36,52 @@ class FileAndKeyViewController: UIViewController {
     }
     
     @IBAction func encryptButton_TouchUpInside(_ sender: Any) {
-        ProgressHUD.show("Loading")
-        let url = Config.baseUrl + "/insert"
-        let params = ["key": keyTextField.text!]
+        /// *** No Client Side Encryption ***///
+        
+//        ProgressHUD.show("Loading")
+//        let url = Config.baseUrl + "/insert"
+//        let params = ["key": keyTextField.text!]
+//        if let coverImage = coverImage, let chosenImage = chosenImage {
+//            Api.encryptionRequest(url: url, coverImageData: coverImage.pngData()!, hiddenImageData: chosenImage.pngData(), parameters: params, onCompletion: { (link) -> (Void) in
+//                ProgressHUD.dismiss()
+//                self.insertedImageLink = link
+//                self.performSegue(withIdentifier: "FileToResult_Segue", sender: link)
+//            }) { (error) in
+//                ProgressHUD.dismiss()
+//                let alert = UIAlertController.createActionView(title: "Error", message: error, actionText: "Retry")
+//                self.present(alert, animated: true, completion: nil)
+//            }
+//        }
+        
+        if Reachability.isConnectedToNetwork() {
+            guard let key = keyTextField.text else { return }
+            
+            if chosenImage == nil && key.isEmpty {
+                let alert = UIAlertController.createActionView(title: "Error", message: "Please Provide Both Image and Key", actionText: "Retry")
+                present(alert, animated: true, completion: nil)
+            } else if chosenImage == nil {
+                let alert = UIAlertController.createActionView(title: "Error", message: "Please Provide Image Input", actionText: "Retry")
+                present(alert, animated: true, completion: nil)
+            } else if key.isEmpty {
+                let alert = UIAlertController.createActionView(title: "Error", message: "Please Provide Key Input", actionText: "Retry")
+                present(alert, animated: true, completion: nil)
+            } else {
+                handleFileEncryption(key: key)
+            }
+        } else {
+            let alert = UIAlertController.createActionView(title: "No Internet", message: "Device is not connected to internet", actionText: "Ok")
+            present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    private func handleFileEncryption(key: String) {
         if let coverImage = coverImage, let chosenImage = chosenImage {
-            Api.encryptionRequest(url: url, coverImageData: coverImage.pngData()!, hiddenImageData: chosenImage.pngData(), parameters: params, onCompletion: { (link) -> (Void) in
+            ProgressHUD.show("Loading")
+            let url = Config.baseUrl + "/insert"
+            let params = ["key": key]
+            let data = ClientSide.clientEncryptionImage(input: chosenImage.pngData()!, password: key)
+            
+            Api.encryptionRequest(url: url, coverImageData: coverImage.pngData()!, hiddenImageData: data, parameters: params, onCompletion: { (link) -> (Void) in
                 ProgressHUD.dismiss()
                 self.insertedImageLink = link
                 self.performSegue(withIdentifier: "FileToResult_Segue", sender: link)

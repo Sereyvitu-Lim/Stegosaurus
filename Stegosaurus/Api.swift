@@ -50,7 +50,7 @@ class Api {
         }
     }
     
-    static func encryptionRequest(url: String, coverImageData: Data, hiddenImageData: Data?, parameters: [String : Any], onCompletion: @escaping (String) -> (Void), onError: @escaping (String) -> Void) {
+    static func encryptionRequest(url: String, coverImageData: Data, hiddenImageData: Data? = nil, parameters: [String : Any], onCompletion: @escaping (String) -> (Void), onError: @escaping (String) -> Void) {
         
         let headers: HTTPHeaders = ["Content-type": "multipart/form-data"]
         
@@ -69,11 +69,6 @@ class Api {
             case .success(let upload, _, _):
                 upload.responseJSON { response in
                     print("Succesfully uploaded")
-                    print("result: \(result)")
-                    print("upload: \(upload)")
-                    print("response: \(response.data)")
-                    print("Value: \(response.value)")
-                    print("status code \(response.response?.statusCode.description)")
                     let statusCode = response.response?.statusCode
                     if statusCode == 200 {
                         if let value = response.value as? String {

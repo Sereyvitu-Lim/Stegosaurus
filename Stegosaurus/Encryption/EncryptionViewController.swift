@@ -64,20 +64,25 @@ class EncryptionViewController: UIViewController {
     }
     
     @IBAction func nextButton_TouchUpInside(_ sender: Any) {
-        let actionSheet = UIAlertController(title: "Stegosaurus", message: "What type of file would you like to hide?", preferredStyle: .actionSheet)
-        let textAction = UIAlertAction(title: "Text message", style: .default) { (_) in
-            self.performSegue(withIdentifier: "EncryptToMessage_Segue", sender: self.selectedImage)
+        if selectedImage == nil {
+            let alert = UIAlertController.createActionView(title: "Error", message: "Please Select an Image", actionText: "Retry")
+            present(alert, animated: true, completion: nil)
+        } else {
+            let actionSheet = UIAlertController(title: "Stegosaurus", message: "What type of file would you like to hide?", preferredStyle: .actionSheet)
+            let textAction = UIAlertAction(title: "Text message", style: .default) { (_) in
+                self.performSegue(withIdentifier: "EncryptToMessage_Segue", sender: self.selectedImage)
+            }
+            let filesAction = UIAlertAction(title: "Other files", style: .default) { (_) in
+                self.performSegue(withIdentifier: "EncryptToFile_Segue", sender: self.selectedImage)
+            }
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+            
+            actionSheet.addAction(textAction)
+            actionSheet.addAction(filesAction)
+            actionSheet.addAction(cancelAction)
+            
+            present(actionSheet, animated: true, completion: nil)
         }
-        let filesAction = UIAlertAction(title: "Other files", style: .default) { (_) in
-            self.performSegue(withIdentifier: "EncryptToFile_Segue", sender: self.selectedImage)
-        }
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-        
-        actionSheet.addAction(textAction)
-        actionSheet.addAction(filesAction)
-        actionSheet.addAction(cancelAction)
-        
-        present(actionSheet, animated: true, completion: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

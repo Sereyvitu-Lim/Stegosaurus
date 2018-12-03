@@ -14,6 +14,7 @@
 		B61A1BAD2184BBD600EA5BB8 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61A1BAC2184BBD600EA5BB8 /* Api.swift */; };
 		B61A1BAF2184C17400EA5BB8 /* DecryptionResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61A1BAE2184C17400EA5BB8 /* DecryptionResultViewController.swift */; };
 		B62A2A33217A5D770024086A /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62A2A32217A5D770024086A /* AboutUsViewController.swift */; };
+		B65C8A0D21A702E50002D592 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65C8A0C21A702E50002D592 /* Reachability.swift */; };
 		B6750FB4217511330095060B /* MessageAndKeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6750FB3217511330095060B /* MessageAndKeyViewController.swift */; };
 		B67F4BFB2174CF7D0069ADDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67F4BFA2174CF7D0069ADDD /* AppDelegate.swift */; };
 		B67F4C002174CF7D0069ADDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B67F4BFE2174CF7D0069ADDD /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		B61A1BAC2184BBD600EA5BB8 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		B61A1BAE2184C17400EA5BB8 /* DecryptionResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecryptionResultViewController.swift; sourceTree = "<group>"; };
 		B62A2A32217A5D770024086A /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		B65C8A0C21A702E50002D592 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		B6750FB3217511330095060B /* MessageAndKeyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageAndKeyViewController.swift; sourceTree = "<group>"; };
 		B67F4BF72174CF7D0069ADDD /* Stegosaurus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stegosaurus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B67F4BFA2174CF7D0069ADDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				B61A1BA52184B50900EA5BB8 /* Config.swift */,
 				B61A1BAC2184BBD600EA5BB8 /* Api.swift */,
 				B6C7FC2E218A1F0A0087035D /* ClientSide.swift */,
+				B65C8A0C21A702E50002D592 /* Reachability.swift */,
 			);
 			path = Stegosaurus;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				B61A1BAB2184BB0400EA5BB8 /* UrlDecryptionViewController.swift in Sources */,
 				B61A1BA92184BAED00EA5BB8 /* ImageDecryptionViewController.swift in Sources */,
 				B67F4C0D2174D5030069ADDD /* FrontPageViewController.swift in Sources */,
+				B65C8A0D21A702E50002D592 /* Reachability.swift in Sources */,
 				B6C7FC2F218A1F0A0087035D /* ClientSide.swift in Sources */,
 				B61A1BAF2184C17400EA5BB8 /* DecryptionResultViewController.swift in Sources */,
 				B67F4C152174DC900069ADDD /* DefaultImage.swift in Sources */,

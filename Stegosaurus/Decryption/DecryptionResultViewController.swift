@@ -12,7 +12,7 @@ class DecryptionResultViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
 
-    var requestedData: Data!
+    var requestedImage: UIImage?
     var requestedString: String?
     
     lazy var messageTextView: UITextView = {
@@ -36,15 +36,15 @@ class DecryptionResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if requestedString != nil {
+        if requestedImage == nil {
             messageTextView.text = requestedString
         } else {
-            hiddenImageView.image = UIImage(data: requestedData)
+            hiddenImageView.image = requestedImage
         }
     }
     
     override func viewDidLayoutSubviews() {
-        if requestedString != nil {
+        if requestedImage == nil {
             createMessageTextViewConstraints()
         } else {
             createImageViewConstraints()
